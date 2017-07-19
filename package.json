@@ -1,0 +1,23 @@
+{
+  "name": "crypto-news",
+  "version": "1.0.0",
+  "description": "news aggregator website that focuses on Bitcoin & Ethereum",
+  "main": "server.js",
+  "scripts": {
+    "test": "test",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "Bitcoin",
+    "Cryptocurrency",
+    "News",
+    "MongoDB"
+  ],
+  "author": "Zachary Keeshin",
+  "license": "ISC",
+  "dependencies": {
+    "exphbs": "^1.1.0",
+    "express": "^4.15.3",
+    "mongoose": "^4.11.3"
+  }
+}
