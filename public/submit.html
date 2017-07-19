@@ -31,6 +31,13 @@
       padding: 15px;
     }
 
+    input{
+      display: block;
+      font-size: 24px;
+      height: 36px;
+      margin: 5px;
+    }
+
     /* On small screens, set height to 'auto' for sidenav and grid */
     @media screen and (max-width: 767px) {
       .sidenav {
@@ -57,7 +64,7 @@
       <ul class="nav navbar-nav">
         <li class="active"><a href="file:///Users/zachkeeshin/Crypto-News/Crypto-News/public/index.html">Home</a></li>
         <li><a href="">About</a></li>
-        <li><a href="file:///Users/zachkeeshin/Crypto-News/Crypto-News/public/submit.html">Submit</a></li>
+        <li><a href="#">Submit</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
     </div>
@@ -69,20 +76,14 @@
     <div class="col-sm-2 sidenav">
     </div>
     <div class="col-sm-8 text-left">
-      <h1>About</h1>
+      <h1>Add a New Article to the Database</h1>
       <hr>
-      <p>This website allows users to read up on all things <i>cryptocurrency</i>. Whether that means scanning articles
-      about the latest coin openings from Business Insider or simply settling down with a long-form piece from
-      CoinDesk, Crypto-Net News is your go-to article aggregator. Users can populate articles from any newspaper
-      or magazine of their choice as well as study these dynamic markets using the ticker widget.
-      </p>
-      <img src="https://bitcoin.org/img/icons/opengraph.png"
-           style="margin-left: 40%; height: 100px; width: 100px; margin-bottom: 10px;"
-      >
-      <br>
-      <p>This website was built over the course of roughly two weeks by students at the Northwestern Coding Boot Camp.
-      They employed a variety of technologies including MongoDB, Express, HTML5 and CSS3.
-      </p>
+      <form action="/submit" method="post">
+        <input type="text" name="title" placeholder="Title">
+        <input type="text" name="link" placeholder="Article Link">
+        <input type="text" name="image" placeholder="Image">
+        <input type="submit">
+      </form>
     </div>
     <div class="col-sm-2 sidenav">
     </div>
