@@ -1,8 +1,8 @@
 //  MONGOOSE
 var mongoose = require('mongoose');
-mongoose.Promise = Promise;
 var db = mongoose.connection;
 mongoose.connect("mongodb://localhost/cryptonetnews");
+mongoose.Promise = Promise;
 
 //  EXPRESS
 var express = require('express');
@@ -17,6 +17,6 @@ app.set('view engine', 'hbs');
 var Article = require("./models/article.js");
 
 // Listen on the port
-app.listen(PORT, function() {
-  console.log("Listening on port:" + PORT);
+app.listen(3000, function() {
+  console.log("Listening on port 3000");
 });

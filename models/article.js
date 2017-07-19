@@ -1,4 +1,6 @@
-var Schema = mongoose.Schema
+var mongoose = require("mongoose");
+
+var Schema = mongoose.Schema;
 
 var articleSchema = new Schema({
   link: {
